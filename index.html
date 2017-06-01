@@ -5,6 +5,7 @@
 </head>
 <body ng-app="usernotes">
 	<h1>Notes</h1>
+	<div ng-include="'partials/navbar.html'"></div>
 
 	<div ng-view>
 		<!--area for content to change out -->
@@ -16,10 +17,11 @@
 	<script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script>
 
 	<script src="app/app.js"></script>
-	<script src="app/controllers/login.js"></script>
-	<script src="app/controllers/newnote.js"></script>
-	<script src="app/controllers/notelist.js"></script>
-	<script src="app/controllers/reg.js"></script>
-	<script src="app/factories/NoteFactory.js"></script>
+	<script src="app/controllers/loginCtrl.js"></script>
+	<script src="app/controllers/newnoteCtrl.js"></script>
+	<script src="app/controllers/notelistCtrl.js"></script>
+	<script src="app/controllers/regCtrl.js"></script>
+	<script src="app/factories/DataFactory.js"></script>
+	<script src="app/factories/AuthFactory.js"></script>
 </body>
 </html>
